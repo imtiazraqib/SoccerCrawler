@@ -26,5 +26,5 @@ for sectag in page_content.find_all('section', {'class': 'headlineStack__listCon
         if (counter < 10):
             for litag in ultag.find_all('li'):
                 counter = counter + 1
-                print(str(counter) + ". " + litag.text + " - " + litag.find('a')['href'])
+                print(str(counter) + ". " + litag.text + " - http://www.espn.com" + litag.find('a')['href'])
         
